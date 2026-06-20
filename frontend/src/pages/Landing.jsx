@@ -18,8 +18,8 @@ export default function Landing() {
           JobTrack
         </div>
         <div style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
-          <span style={{ color: '#6F6B7D', fontSize: 13, fontWeight: 500, cursor: 'pointer' }}>Features</span>
-          <span style={{ color: '#6F6B7D', fontSize: 13, fontWeight: 500, cursor: 'pointer' }}>How it works</span>
+          <a href="#features" style={{ color: '#6F6B7D', fontSize: 13, fontWeight: 500, cursor: 'pointer', textDecoration: 'none' }}>Features</a>
+<a href="#how-it-works" style={{ color: '#6F6B7D', fontSize: 13, fontWeight: 500, cursor: 'pointer', textDecoration: 'none' }}>How it works</a>
           <Link to="/login" style={{ color: '#3C3A4D', fontSize: 13, textDecoration: 'none', fontWeight: 600 }}>Sign in</Link>
           <Link to="/register" style={{ textDecoration: 'none' }}>
             <button style={{
@@ -125,10 +125,10 @@ export default function Landing() {
       </div>
 
       {/* Features */}
-      <div style={{ padding: '64px 60px', background: 'white', maxWidth: 1180, margin: '0 auto' }}>
-        <h2 style={{ textAlign: 'center', fontSize: 30, fontWeight: 800, color: '#3C3A4D', marginBottom: 10 }}>
-          Everything you need to land the job
-        </h2>
+      <div id="features" style={{ padding: '64px 60px', background: 'white', maxWidth: 1180, margin: '0 auto' }}>
+  <h2 style={{ textAlign: 'center', fontSize: 30, fontWeight: 800, color: '#3C3A4D', marginBottom: 10 }}>
+    Everything you need to land the job
+  </h2>
         <p style={{ textAlign: 'center', fontSize: 15, color: '#6F6B7D', marginBottom: 48 }}>
           Built for job seekers who want clarity, not chaos
         </p>
@@ -154,10 +154,10 @@ export default function Landing() {
       </div>
 
       {/* How it works */}
-      <div style={{ padding: '64px 60px', background: '#F8F7FA' }}>
-        <h2 style={{ textAlign: 'center', fontSize: 30, fontWeight: 800, color: '#3C3A4D', marginBottom: 10 }}>
-          How it works
-        </h2>
+      <div id="how-it-works" style={{ padding: '64px 60px', background: '#F8F7FA' }}>
+  <h2 style={{ textAlign: 'center', fontSize: 30, fontWeight: 800, color: '#3C3A4D', marginBottom: 10 }}>
+    How it works
+  </h2>
         <p style={{ textAlign: 'center', fontSize: 15, color: '#6F6B7D', marginBottom: 48 }}>
           Three steps to a more organized job search
         </p>
