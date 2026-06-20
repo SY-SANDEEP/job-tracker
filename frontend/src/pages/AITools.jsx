@@ -2,7 +2,8 @@ import { useState } from 'react';
 
 const callBackend = async (endpoint, body) => {
   const token = localStorage.getItem('token');
-  const res = await fetch(`http://localhost:8080/api/ai/${endpoint}`, {
+  const baseURL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
+  const res = await fetch(`${baseURL}/api/ai/${endpoint}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
